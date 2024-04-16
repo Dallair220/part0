@@ -72,3 +72,24 @@ sequenceDiagram
     server-->>browser: 200: JSON with array of note objects
     deactivate server
 ```
+
+## Exercise 0.6: New note in Single page app diagram
+
+```mermaid
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note right of browser: User clicks the button on the form
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    activate server
+
+    Note right of browser: Browser rerenders the note list on the page and sends the new note to the server
+
+    server-->>browser: 201: Created
+    deactivate server
+
+```
+
+
