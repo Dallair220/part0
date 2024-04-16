@@ -10,9 +10,11 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    Note left of server: test
-    server-->>browser: 302 redirect
+    Note left of server: server creates a new note object, and adds it to an array
+    server-->>browser: URL redirect
     deactivate server
+
+    Note right of browser: The browser reloads the Notes page because of the redirect
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
