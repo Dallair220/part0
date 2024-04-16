@@ -13,7 +13,7 @@ sequenceDiagram
     server-->>browser: 302 redirect
     deactivate server
 
-    Note right of browser: test
+    Note right of server: test
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
