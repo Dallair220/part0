@@ -42,3 +42,33 @@ sequenceDiagram
 
     Note right of browser: Browser executes the callback function that renders the notes
 ```
+
+## Exercise 0.5: Single page app diagram
+
+```mermaid
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note right of browser: User goes to the single-page app version of the notes app
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    activate server
+    server-->>browser: 200: HTML document
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    server-->>browser: 200: CSS file
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    activate server
+    server-->>browser: 200: JavaScript file
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: 200: JSON with array of note objects
+    deactivate server
+```
