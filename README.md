@@ -1,6 +1,6 @@
 # Part 0 - Fundamentals of Web apps
-## Full Stack Open - Course by the University of Helsinki
-(https://fullstackopen.com/en/part0/fundamentals_of_web_apps)
+**Full Stack Open** - Course by the University of Helsinki
+*(https://fullstackopen.com/en/part0/fundamentals_of_web_apps)*
 
 ## Exercise 0.4: New note diagram
 
